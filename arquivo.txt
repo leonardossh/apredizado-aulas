@@ -1,2 +1,46 @@
 Teste
 testando esse arquivo para o github
+
+Para iniciarmos com o git.
+comando para gerar seu diretorio github na sua maquina local.
+-git clone ...
+feito isso iniciaremos com as nossas credenciais.
+-git config --global user.name ""
+-git config --global user.email ""
+se pedir um token para o acesso, vá em
+--settings
+---Developer settings 
+---personal access token
+----Tokens Classic
+gere um token de acordo com a necessidades que precisa.
+copie esse token.
+NO terminal rode o comando.
+-git config --global credential.helper store
+--rode outro comando para pedir suas credenciais.
+---utilize seus dados.
+----em senha coloque seu token gerado.
+O comando credential.helper ira salvar seu token na sua maquina local.
+
+
+Para salvar algo e subir na sua branch principal "Main", coemce por.
+-git switch -c "..."
+IRA CRIAR SUA NOVA BRANCH, UMA RAMIFICAÇÃO.
+CASO CRIE UMA BRANCH E NAO LEMBRA O NOME DADO A ELA, RODE:
+--git branch
+Após criar suas branch e quiser subilas para seu repositório git.
+-git add . 
+--IRA SUBIR OS ARQUIVOS MODIFICADOS E NOVOS.
+-git add -a 
+--IRA SUBIR TODOS OS ARQUIVOS.
+-git add meu-arquivo.txt
+--IRA SUBIR APENAS UM ARQUIVI ESPECIFICO.
+
+Feito isso, rodara o comando:
+-git commit -m ""
+--IRA PASSAR DE MANEIRA BRUTA OQUE ESTA SENDO FEITO.
+Para verificar se o commit deu certo:
+-git status
+VERIFICOU O MODIFILE, ESTA CORRETO.
+Voce ira roda o comando para subir seus arquivos:
+-git push --set-upstream origin "nome dado no -git switch ..."
+
