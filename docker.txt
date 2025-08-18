@@ -1,4 +1,2 @@
 Olá
 Nesse aquirvo vou explicar sobre alguns comando do docker para estudo.
-
-
